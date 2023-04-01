@@ -5,7 +5,8 @@ body{
     margin: 0;
     padding: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #35592F;
+    background-color: #ccc;
+ 
 }
 .container{
     display: flex;
@@ -13,6 +14,12 @@ body{
     height: 100vh;
 
 
+
+}
+.back{
+    background-image: url("../img/ai-generated-7847176.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .top_page{
     width: 100%;
@@ -40,8 +47,8 @@ body{
 }
 .login_center{
     background-color: white;
-    border-radius: 5em;
-    box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    opacity: 0.8;
 
 }
 .avatar_profile{
@@ -283,10 +290,9 @@ body{
   ul {
     list-style-type: none;
     margin-top: 10px;
-    margin: 30px;
-    padding: 30px;
+    margin-left: 10px;
+    padding-top: 70px;
     overflow: hidden;
-    align-items: center;
-    text-align: center;
+    
 
   }
