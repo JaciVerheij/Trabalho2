@@ -17,3 +17,8 @@ function sair(){
 function mostrarNome(nomeUsuario){
     document.write("Olá ", nomeUsuario, ", seja bem-vinda!")
 }
+
+const $html = document.querySelector('html')
+const $checkbox =  document.addEventListener('change',function(){
+    $html.classList.toggle('dark_mode')
+})

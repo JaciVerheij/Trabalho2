@@ -1,3 +1,15 @@
+:root{
+    --Menu-color: #670F7A;
+    --AdicionarTarefa-color: #D31DFA;
+    --Footer-color: #E069FB;
+    --Header-color: #6D337A;
+}
+.dark_mode:root{
+    --Menu-color: rgb(52, 148, 135);
+    --AdicionarTarefa-color: #65c76d;
+    --Footer-color: rgb(179, 16, 92);
+    --Header-color: rgb(145, 81, 81);
+}
 #login_page {
     background-color: #89E67A;
 }
@@ -127,7 +139,7 @@ body{
 
 
 .side_menu{
-    background-color: #ccc;
+    background-color: var(--Menu-color);
     width: 200px;
     margin-right: 4px;
     margin-bottom: 4px;
@@ -160,14 +172,14 @@ body{
 }
 .task_button{
     display: flex;
-    background-color: rgb(169, 240, 240);
+    background-color: var(--AdicionarTarefa-color);
     flex-basis: 30%;
     box-shadow: rgb(189, 183, 180);
     justify-content: center;
     align-items: center;
 }
 .calendar_content{
-    background-color: rgb(187, 187, 177);
+    background-color: rgb(132, 0, 255);
     margin-top: 4px;
     margin-bottom: 4px;
 
@@ -296,3 +308,9 @@ body{
     
 
   }
+  
+
+.menu_part4{
+    text-align: center;
+    align-items: center;
+}
