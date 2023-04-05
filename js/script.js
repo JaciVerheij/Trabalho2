@@ -9,35 +9,40 @@ function validarLogin(){
         var token = Math.random().toString(36).substring(2);
 
         localStorage.setItem("token", token)
-        botao_entrar = window.open("~/../index.html")
+        window.open("~/../index.html")
+        window.close()
+
     }
 }
 
 function sair(){
-    btn_sair = window.open("~/../login.html")
-    localStorage.removeItem('token')
+    window.open("~/../login.html")
+    localStorage.removeItem('token') 
+    window.close()
+
 }
 
 function mostrarNome(nomeUsuario){
-    document.write("Olá ", nomeUsuario, ", seja bem-vindo!")
+    document.write("Olá ", nomeUsuario, ", seja bem-vindos!")
 }
 
-const $html = document.querySelector('html')
-const $checkbox =  document.addEventListener('change',function(){
-    $html.classList.toggle('dark_mode')
-})
+
 
 var count = 0
 
 $(function(){
-    let task_list = $("#task_list")
-    $("myForm").submit(function(event){
+    let task_list = $(".task_list")
+    $("#myForm").submit(function(event){
         let valuesInForm = $(this).serializeArray()
         console.table(valuesInForm)
         if(count <= 6){
             $("#taskTable").append('<tr> <td>' + valuesInForm[0].value + '</td>' + 
             '<td>' + valuesInForm[1].value + '</td>' +
             '<td>' + valuesInForm[2].value + '</td> </tr>')
+
+            $('#myForm').each (function(){
+                this.reset();
+              })
 
         }else{
             alert("O limite foi atingido")
