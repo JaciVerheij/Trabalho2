@@ -1,3 +1,5 @@
+/* Jaci Verheij e Lucas de Paula*/
+
 :root{
     --Menu-color: #f5f4d7;
     --AdicionarTarefa-color:#f5f4d7;
@@ -18,7 +20,7 @@
     --Menu-text:white;
     --Link-color: white;
     --Link-color-hover: rgb(11, 195, 228);
-    --Saudacao: white;
+    --Saudacao: white; 
 
 }
 #login_page {
@@ -356,4 +358,17 @@ body{
 }
 #saudacao{
     color: var(--Saudacao);
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,td{
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+tr:hover{
+    background-color: rgba(0, 0, 0, 0.068);
 }
